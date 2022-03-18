@@ -1,14 +1,30 @@
-body {
+* {
   font-family: 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
+}
+.row {
+  max-width: 100;
+  border: solid 2px red;
+  padding: 2;
+  margin: 2;
+  max-width: 1920px;
+}
+.navbar {
+  background-color: #fad1ff;
+  color: #575757;
+}
+.navbar-toggler {
+  border-color: #9de1d0;
+  background-color: #51aa94;
+}
+.homepage {
+  background-color: #f5f5ef;
+  background-image: url('/img/altBg2.png');
+  background-size: cover;
 }
 .slider {
-  background-color: #9de1d0;
+  background-color: #f5f5ef;
 }
-.slideImg {
-  width: 95%;
-}
+
 h1 {
   font-family: 'Brush Script MT', cursive;
   color: #3c3d3d;
@@ -16,44 +32,50 @@ h1 {
 h2 {
   text-align: center;
   color: #484949;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-family: optima;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.navbar {
-  background-color: #158686;
-  color: #ffffff;
-  opacity: 0.7;
+h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.navbar-toggler {
-  border-color: #9de1d0;
-  background-color: #51aa94;
-}
-
+/* HOMEPAGE */
 .freebies {
-  background-color: #9de1d0;
-  padding: 90px;
-}
-.blog .blogpost {
-  background-color: #f7f8fa;
+  background-image: url('/img/fondoall.png');
 }
 .blog {
-  background-color: #f3e7f7;
-  text-align: center;
-  padding: 20px;
+  background-image: url('/img/blog1.png');
+  background-size: contain;
 }
-
-.pie {
-  background-color: #232323;
+.blog > h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
-
+.blogPost {
+  background-color: white;
+  opacity: 0.9;
+}
+.blogWrap {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
 .collapse {
   justify-content: center;
 }
 .shop {
-  background-color: white;
-  padding: 40px;
+  background-image: url('/img/fondoall.png');
+  padding-top: 20px;
+  padding-bottom: 90px;
 }
-.blogMain {
-  align-items: center;
-  margin-top: 20px;
+.newsletter {
+  background-image: url('/img/newsletter.png');
+  background-size: cover;
+}
+/* FOOTER */
+.pie {
+  background-image: url('/img/footerBg.png');
+  background-size: cover;
+  color: white;
 }

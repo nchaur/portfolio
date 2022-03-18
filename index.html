@@ -13,13 +13,13 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light">
     <a class="navbar-brand" href="index.html">BilingualBound</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -41,11 +41,11 @@
   </nav>
 
   <!-- Header  -->
-  <header class="slider">
+  <header class="homepage">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <img src="img/bg-teal.png" alt="background" class="slideImg" />
+        <div class="col-sm-12">
+          <img src="img/bilingualbound.png" alt="background" class="img-fluid" />
         </div>
       </div>
     </div>
@@ -54,75 +54,102 @@
   <!-- !header  -->
 
   <!-- freebies -->
-  <div class="container-fluid freebies">
+  <div class="container-fluid pt-3 pb-5 freebies">
     <div class="row">
-      <div class="col-12">
-        <h2>Freebies</h2>
+      <div class="col">
+        <h2 class="display-4">Freebies</h2>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="img/apple.png" alt="Freebie 1" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-info">Read more</a>
-          </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card m-2 text-center">
+          <img class=" card-img-top" src="img/freebie1.png" alt="Freebie 1" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Flashcards</h5>
+          <p class="card-text">SLorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet voluptatibus.</p>
+          <a href="freebies.html" class="btn btn-info">Learn more</a>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="img/apple2.png" alt="Freebie 2" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-info">Read more</a>
-          </div>
+      <div class="col-md-4">
+        <div class="card m-2 text-center">
+          <img class=" card-img-top" src="img/freebie2.png" alt="Freebie 2" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">ABC's activities</h5>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet voluptatibus.
+            content.</p>
+          <a href="freebies.html" class="btn btn-info">Learn more</a>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="img/apple.png" alt="Freebie 3" />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-info">Read more</a>
-          </div>
-        </div>
+      <div class="col-md-4">
+        <div class="card m-2 text-center"">
+          <img class=" card-img-top" src="img/freebie3.png" alt="Freebie 3" />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Back to School</h5>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, amet voluptatibus.
+          content.</p>
+        <a href="freebies.html" class="btn btn-info">Learn more</a>
       </div>
     </div>
   </div>
   <!-- !reebies -->
 
   <!-- blog -->
-  <div class="container-fluid blog">
+  <div class="container-fluid pt-3 pb-5 blog">
     <div class="row">
-      <div class="col-12">
-        <h2>Blog</h2>
+      <div class="col-12 ">
+        <h2 class="display-4">Blog</h2>
       </div>
-      <div class="col-sm-4 blogImg">
-        <img class="img-thumbnail" src="img/apple.png" alt="blog-post" />
+      <div class="col-md-5 blogImg">
+        <img class="img-thumbnail" src="img/blogImg.png" alt="blog-post" />
       </div>
-      <div class="col-sm-8">
-        <h4>Titulo</h4>
-        <p>Content</p>
-        <a href=" #" class="btn btn-info">Read more</a>
+      <div class="col blogPost p-3">
+        <div class="d-flex blogWrap">
+          <h4 class="text-center">How to learn Spanish</h4>
+          <p class="text-muted text-center">Mar 22</p>
+          <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore, odio
+            minus explicabo vitae
+            nihil, cumque repellat atque laboriosam doloremque facilis officiis nobis aspernatur tenetur quaerat
+            nesciunt
+            eveniet, nulla dignissimos. </p>
+          <a href="blog.html" class="btn btn-info align-baseline">Continue reading</a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- end of blog -->
+  <!-- !blog -->
+
+  <!-- contact -->
+  <div class="container-fluid newsletter p-5">
+    <div class="row">
+      <div class="col-sm-5">
+        <h2 class="text-white text-center">Subscribe to our Newsletter</h2>
+      </div>
+      <form class="col p-1">
+        <div class="col form-group">
+          <input type="text" class="form-control" id="inputAddress" placeholder="Your email" />
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-danger">Subscribe Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- !contact -->
+
   <!-- shop -->
   <div class="container-fluid d-none d-sm-block shop">
     <div class="row">
       <div class="col-12">
-        <h2>Shop</h2>
+
+        <h2 class="display-4">Shop</h2>
       </div>
       <div class="col-md-3">
         <div class="thumbnail">
           <a href="/w3images/lights.jpg">
-            <img src="img/apple.png" alt="Lights" style="width:100%">
+            <img src="img/shop1.png" alt="Lights" style="width:100%">
             <div class="caption">
               <p>Lorem ipsum...</p>
             </div>
@@ -131,18 +158,8 @@
       </div>
       <div class="col-md-3">
         <div class="thumbnail">
-          <a href="/w3images/nature.jpg">
-            <img src="img/apple.png" alt="Nature" style="width:100%">
-            <div class="caption">
-              <p>Lorem ipsum...</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <a href="/w3images/fjords.jpg">
-            <img src="img/apple.png" alt="Fjords" style="width:100%">
+          <a href="/w3images/.jpg">
+            <img src="img/shop2.png" alt="Nature" style="width:100%">
             <div class="caption">
               <p>Lorem ipsum...</p>
             </div>
@@ -152,7 +169,17 @@
       <div class="col-md-3">
         <div class="thumbnail">
           <a href="/w3images/fjords.jpg">
-            <img src="img/apple.png" alt="Fjords" style="width:100%">
+            <img src="img/shop3.png" alt="Fjords" style="width:100%">
+            <div class="caption">
+              <p>Lorem ipsum...</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/w3images/fjords.jpg">
+            <img src="img/shop4.png" alt="Fjords" style="width:100%">
             <div class="caption">
               <p>Lorem ipsum...</p>
             </div>
@@ -163,6 +190,11 @@
   </div>
 
   <!-- Shop on phone screen  -->
+  <div class="row">
+    <div class="col-12 d-block d-sm-none">
+      <h2>Shop</h2>
+    </div>
+  </div>
 
   <div id="carouselExampleIndicators" class="carousel slide d-block d-sm-none" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -172,13 +204,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="img/apple.png" alt="First slide" />
+        <img class="d-block w-100" src="img/shop1.png" alt="First slide" />
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Second slide" />
+        <img class="d-block w-100" src="img/shop2.png" alt="Second slide" />
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="..." alt="Third slide" />
+        <img class="d-block w-100" src="img/shop3.png" alt="Third slide" />
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -191,11 +223,10 @@
     </a>
   </div>
   <!-- end of shop -->
-  <hr />
 
   <div class="container-fluid pie">
     <footer>
-      <div class="row">
+      <div class="row p-5">
         <div class="col-sm-6">
           <h3>Our Newsletter</h3>
           <form>
@@ -222,9 +253,9 @@
         <div class="col-sm-6">
           <h4>Contact</h4>
         </div>
-        <hr />
+        <br>
         <div class="col">
-          <p>&copy; 2022 B is for Billingual</p>
+          <p>&copy; 2022 BilingualBound</p>
         </div>
       </div>
   </div>
