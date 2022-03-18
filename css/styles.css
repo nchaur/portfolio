@@ -14,21 +14,23 @@ body {
 .freebies {
   background-image: url('/img/fondoall.png');
 }
+.bilingualbound {
+  background-image: url('/img/bilingualbound.png');
+}
+nav {
+  background-color: #e8aad7;
+}
 .container-fluid {
   max-width: 1200px;
 }
 
-.row {
-  /* max-width: 100; */
-}
-.navbar {
-  background-color: transparent;
-  color: #575757;
-}
 .navbar-toggler {
-  border-color: #9de1d0;
-  background-color: #ffa6dd;
+  background-color: #b2d8fa;
 }
+.navbar-collapse {
+  background-color: transparent;
+}
+
 .homepage {
   background-color: #f5f5ef;
   background-image: url('/img/altBg2.png');
@@ -39,18 +41,18 @@ body {
 }
 
 h1 {
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Poppins', sans-serif;
   color: #3c3d3d;
+  text-align: center;
 }
 h2 {
   text-align: center;
   color: #484949;
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
-h3 {
+h3,
+h4 {
   font-family: 'Open Sans', sans-serif;
 }
 /* HOMEPAGE */
@@ -61,20 +63,10 @@ h3 {
   background-image: url('/img/blog1.png');
   background-size: contain;
 }
-.blog > h2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
 .blogPost {
   background-color: white;
-  opacity: 0.9;
 }
-.blogWrap {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
+
 .collapse {
   justify-content: center;
 }
@@ -87,13 +79,23 @@ h3 {
   background-image: url('/img/newsletter.png');
   background-size: cover;
 }
+.newsletter .newsletter__email {
+  flex-basis: 40%;
+}
 /* FOOTER */
 .end {
   background-image: url('/img/footerBg.png');
   background-size: cover;
   color: white;
 }
-.icon {
-  font-size: 30px;
+.page-link {
+  background-color: transparent;
+  border: none;
+}
+.wrap {
+  max-height: 120px;
+}
+.social {
+  font-size: 20px;
   color: white;
 }

@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-    <a class="navbar-brand" href="index.html">BilingualBound</a>
+  <nav class="navbar navbar-expand-xl sticky-top navbar-light text-right">
+    <a class="navbar-brand align-self-center" href="index.html"><img src="img/icon.png" width="40" height="40" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,116 +34,99 @@
           <a class="nav-link" href="freebies.html">Freebies</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="contact.html">Contact</a><span class="sr-only">(current)</span>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Header  -->
-  <header class="slider">
-    <div class="container">
+  <header class="containerBackground freebies p-0">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
           <img src="img/contact.png" alt="background" class="img-fluid" />
         </div>
       </div>
     </div>
-    </div>
   </header>
-  <!-- End header  -->
-  <form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input type="text" class="form-control" id="inputCity">
-      </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select id="inputState" class="form-control">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input type="text" class="form-control" id="inputZip">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
 
 
-
-
-
-
-  <hr />
-
-
-
-
-  <div class="container-fluid pie">
-    <footer>
-      <div class="row">
-        <div class="col-sm-6">
-          <h3>Our Newsletter</h3>
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" id="inputEmail4" placeholder="First Name" />
-              </div>
-              <div class="form-group col-md-6">
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name" />
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="inputAddress" placeholder="Email" />
-            </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label class="form-check-label" for="gridCheck"> I've read terms and conditions</label>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
+  <!-- contact form -->
+  <div class="containerBackground freebies p-0">
+    <div class="container-fluid">
+      <form>
+        <div class="form-row p-4">
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h4>Contact</h4>
+        <div class="form-row p-4">
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+          </div>
+          <div class="form-group col">
+            <label for="inputService">Service</label>
+            <select id="inputService" class="form-control" required>
+              <option value="service">Service</option>
+              <option value="">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="apptDateTime" class="form-label">Appointment date and time</label>
+            <input type="datetime-local" id="apptDateTime" name="apptDateTime" placeholder="date" class="form-control"
+              required />
+          </div>
         </div>
-        <hr />
-        <div class="col">
-          <p>&copy; 2022 B is for Billingual</p>
+        <div class="form-group col-12 p-4">
+          <label for="inputMessage">Tell us about your inquiry</label>
+          <textarea class="form-control" id="apptMessage" rows="3"></textarea>
         </div>
-      </div>
+        <button type="submit" class="btn btn-info m-4">Submit</button>
+      </form>
+    </div>
   </div>
+
+  <footer>
+    <div class="containerBackground end p-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 p-5 text-center">
+            <h3>Follow us:</h3>
+            <a href="#" class="text-white"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="text-white"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="col-sm-6 p-5 text-center">
+            <h3> Contact us:</h3>
+            <a href="mailto:email@example.com" class="fa fa-envelope text-white">
+              <span class="text-white">email@email.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="row border-top border-secondary">
+          <div class="col-6">
+            <p>&copy; 2022 <span class="text-muted"> BilingualBound</span></p>
+          </div>
+          <div class="col-6 text-right">
+            <span><a href="shop.html " class="text-white m-3">Shop </a></span>
+            <span><a href="freebies.html " class=" text-white m-3">Freebies </a></span>
+            <span><a href="contact.html " class="text-white m-3">Contact </a></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
