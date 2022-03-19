@@ -10,7 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
   <title>Bilingual Bound</title>
 </head>
 
@@ -22,7 +22,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home </a>
         </li>
@@ -42,23 +42,25 @@
     </div>
   </nav>
 
-  <header class="containerBackground freebies p-0">
-    <div class="container-fluid">
+  <header class="containerBackground shopHeader p-4">
+    <div class="container-fluid p-5 align-items-center">
       <div class="row">
-        <div class="col-sm-12">
-          <img src="img/shop.png" alt="background" class="img-fluid" />
+        <div class="col text-center">
+          <h1>Shop</h1>
         </div>
       </div>
     </div>
+    </div>
   </header>
 
-  <div class="containerBackground freebies p-0">
+  <div class="containerBackground  p-3">
     <div class="container-fluid pt-3 pb-5">
       <div class="row p-5">
         <div class="col">
           <form class="form-inline justify-content-center">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            <input type="text" class="newsletter__email form-control text-center form-control-lg mr-3" id="inputAddress"
+              placeholder="Search" />
+            <button type=" submit" class="btn btn-info btn-lg text-center">Search</button>
           </form>
         </div>
       </div>
@@ -145,7 +147,7 @@
         </div>
         <div class="col-sm-3 col-6 p-2">
           <div class="card">
-            <img src="img/shop1.png" alt="shop1" class="img-thumbnail">
+            <img src="img/shop3.png" alt="shop1" class="img-thumbnail">
             <div class="card-body">
               <h4 class="card-text text-center">Product title</h4>
               <p class="text-center">$10</p>
@@ -165,7 +167,7 @@
         </div>
         <div class="col-sm-3 col-6 p-2">
           <div class="card">
-            <img src="img/shop2.png" alt="shop2" class="img-thumbnail">
+            <img src="img/shop4.png" alt="shop2" class="img-thumbnail">
             <div class="card-body">
               <h4 class="card-text text-center">Product title</h4>
               <p class="text-center">$2</p>
@@ -185,10 +187,10 @@
         </div>
         <div class="col-sm-3 col-6 p-2">
           <div class="card">
-            <img src="img/shop3.png" alt="shop3" class="img-thumbnail">
+            <img src="img/shop2.png" alt="shop3" class="img-thumbnail">
             <div class="card-body">
               <h4 class="card-text text-center">Product title</h4>
-              <p class="text-center">$5</p>
+              <p class="text-center">$3</p>
               <div class=" btn-toolbar d-flex justify-content-center align-items-center" role="toolbar">
                 <div class="btn-group" role="group" aria-label="First group">
                   <button type="button" class="btn btn-sm btn-outline-info mr-2" type="submit">Add to cart</button>
@@ -205,10 +207,10 @@
         </div>
         <div class="col-sm-3 col-6 p-2">
           <div class="card">
-            <img src="img/shop4.png" alt="shop4" class="img-thumbnail">
+            <img src="img/shop1.png" alt="shop4" class="img-thumbnail">
             <div class="card-body">
               <h4 class="card-text text-center">Product title</h4>
-              <p class="text-center">$8</p>
+              <p class="text-center">$9</p>
               <div class=" btn-toolbar d-flex justify-content-center align-items-center" role="toolbar">
                 <div class="btn-group" role="group" aria-label="First group">
                   <button type="button" class="btn btn-sm btn-outline-info mr-2" type="submit">Add to cart</button>
@@ -226,39 +228,38 @@
       </div>
     </div>
   </div>
-
-
-
   <footer>
-    <div class="containerBackground end p-0">
+    <div class="containerBackground end p-5">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 p-5 text-center">
+        <div class="row p-3">
+          <div class="col-sm-6 p-5 text-center social">
             <h3>Follow us:</h3>
-            <a href="#" class="text-white"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="text-white"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="text-white"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook text-white"></i></a>
+            <a href="#"><i class="fa fa-twitter text-white"></i></a>
+            <a href="#"><i class="fa fa-instagram text-white"></i></a>
           </div>
-          <div class="col-sm-6 p-5 text-center">
+          <div class="col-sm-6 p-5 text-center social">
             <h3> Contact us:</h3>
             <a href="mailto:email@example.com" class="fa fa-envelope text-white">
               <span class="text-white">email@email.com</span>
             </a>
           </div>
         </div>
-        <div class="row border-top border-secondary">
-          <div class="col-6">
+        <div class="row p-3 border-top border-secondary">
+          <div class="col-sm-6 text-sm-left text-center">
             <p>&copy; 2022 <span class="text-muted"> BilingualBound</span></p>
           </div>
-          <div class="col-6 text-right">
-            <span><a href="shop.html " class="text-white m-3">Shop </a></span>
-            <span><a href="freebies.html " class=" text-white m-3">Freebies </a></span>
-            <span><a href="contact.html " class="text-white m-3">Contact </a></span>
+          <div class="col-sm col text-sm-right text-center p-1">
+            <span><a href="blog.html" class="text-white p-1">Blog </a></span>
+            <span><a href="shop.html" class="text-white p-1">Shop </a></span>
+            <span><a href="freebies.html" class=" text-white p-1">Freebies </a></span>
+            <span><a href="contact.html" class="text-white p-1">Contact </a></span>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

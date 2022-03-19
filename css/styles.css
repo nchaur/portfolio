@@ -7,23 +7,25 @@ body {
   line-height: 1.75;
 }
 /* Layouts */
-
 .containerBackground {
   max-width: 100%;
-}
-.freebies {
-  background-image: url('/img/fondoall.png');
-}
-.bilingualbound {
-  background-image: url('/img/bilingualbound.png');
-}
-nav {
-  background-color: #e8aad7;
 }
 .container-fluid {
   max-width: 1200px;
 }
-
+.bilingualbound {
+  background-image: url('/img/bilingualbound.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  background-color: #e8aad7;
+}
 .navbar-toggler {
   background-color: #b2d8fa;
 }
@@ -31,19 +33,11 @@ nav {
   background-color: transparent;
 }
 
-.homepage {
-  background-color: #f5f5ef;
-  background-image: url('/img/altBg2.png');
-  background-size: cover;
-}
-.slider {
-  background-color: #f5f5ef;
-}
-
+/* fonts */
 h1 {
   font-family: 'Poppins', sans-serif;
   color: #3c3d3d;
-  text-align: center;
+  font-size: 50px;
 }
 h2 {
   text-align: center;
@@ -55,25 +49,14 @@ h3,
 h4 {
   font-family: 'Open Sans', sans-serif;
 }
+
 /* HOMEPAGE */
 .freebies {
-  background-image: url('/img/fondoall.png');
+  background-color: #d4e0ff;
 }
-.blog {
-  background-image: url('/img/blog1.png');
-  background-size: contain;
-}
-.blogPost {
-  background-color: white;
-}
-
-.collapse {
-  justify-content: center;
-}
-.shop {
-  background-image: url('/img/fondoall.png');
-  padding-top: 20px;
-  padding-bottom: 90px;
+.freebies .card {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .newsletter {
   background-image: url('/img/newsletter.png');
@@ -82,19 +65,55 @@ h4 {
 .newsletter .newsletter__email {
   flex-basis: 40%;
 }
+
+/* blog */
+.blogHeader {
+  background-image: url('/img/blog.png');
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+.page-link {
+  background-color: transparent;
+  border: none;
+}
+
+/* contact */
+.contactHeader {
+  background-image: url('/img/contact.png');
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+/* freebies */
+.freebiesHeader {
+  background-image: url('/img/freebies.png');
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+/* shop */
+.shopHeader {
+  background-image: url('/img/shop.png');
+  background-size: cover;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
 /* FOOTER */
 .end {
   background-image: url('/img/footerBg.png');
   background-size: cover;
   color: white;
 }
-.page-link {
-  background-color: transparent;
-  border: none;
-}
-.wrap {
-  max-height: 120px;
-}
+
 .social {
   font-size: 20px;
   color: white;
